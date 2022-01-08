@@ -82,6 +82,7 @@ public class Register extends AppCompatActivity {
                             hashMap.put("Password", password);
                             hashMap.put("Ssn", ssn);
                             hashMap.put("Phone", phone);
+                            hashMap.put("imageurl", "gs://helperdeneme.appspot.com/1.jpeg");
 
                             // If registration process OK, redirect the user to login activity.
                             reference.setValue(hashMap).addOnCompleteListener(new OnCompleteListener<Void>() {
