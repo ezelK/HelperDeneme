@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/txtProfileNameSurname"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="112dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="300dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="236dp"
+            android:layout_height="42dp"
+            android:layout_marginBottom="3dp"
+            android:isIndicator="false"
+            android:numStars="5"
+            android:progressBackgroundTint="@color/bg"
+            android:progressTint="@color/buttonColor"
+            android:stepSize="0.5"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+        <Button
+            android:id="@+id/btnVote"
+            android:layout_width="79dp"
+            android:layout_height="34dp"
+            android:layout_marginStart="55dp"
+            android:background="@drawable/buttonbg"
+            android:fontFamily="serif-monospace"
+            android:shadowColor="@color/buttonColor"
+            android:text="Vote"
+            android:textColor="#6C79BF"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ratingBar"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="52dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/email_img"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_baseline_info_24"
+                tools:src="@drawable/ic_baseline_info_24" />
+
+            <TextView
+                android:id="@+id/txtProfileInfo"
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="serif-monospace"
+                android:text="Information:"
+                android:textColor="#000000"
+                android:textColorHint="#020202"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtInfo"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="serif-monospace"
+                android:textColor="#000000"
+                android:textColorHighlight="#6C79BF"
+                android:textColorHint="#000000"
+                android:textColorLink="#000000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_local_phone_24"
+                tools:src="@drawable/ic_baseline_local_phone_24" />
+
+            <TextView
+                android:id="@+id/txtProfilePhone"
+                android:layout_width="5dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="serif-monospace"
+                android:text="Telephone Number:"
+                android:textColor="#000000"
+                android:textColorHint="#000000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtPhone"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="serif-monospace"
+                android:textColor="#000000"
+                android:textColorHighlight="#6C79BF"
+                android:textColorHint="#000000"
+                android:textColorLink="#000000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_baseline_email_24"
+                tools:src="@drawable/ic_baseline_email_24" />
+
+            <TextView
+                android:id="@+id/txtProfileMail"
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="serif-monospace"
+                android:text="Mail:"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtMailP"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="serif-monospace"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/image_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="156dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/txtService"
+        android:layout_width="128dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5"
+        android:fontFamily="serif-monospace"
+        android:textColor="#000000"
+        android:textColorHighlight="#6C79BF"
+        android:textColorHint="#000000"
+        android:textColorLink="#000000"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="121dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="5"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtService">
+
+        <Button
+            android:id="@+id/btnEditProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/buttonbg"
+            android:fontFamily="serif-monospace"
+            android:text="Edit Profile"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="409dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="5"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_profile">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtCalladHelpers"
+                android:layout_width="128dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="serif-monospace"
+                android:text="Called Helpers"
+                android:textColor="#000000"
+                android:textColorHighlight="#6C79BF"
+                android:textColorHint="#000000"
+                android:textColorLink="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtPerfJobs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="serif-monospace"
+                android:text="Performed Jobs"
+                android:textColor="#000000"
+                android:textColorHighlight="#6C79BF"
+                android:textColorHint="#000000"
+                android:textColorLink="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtFollower"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="52dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="serif-monospace"
+                android:text="Followers"
+                android:textColor="#000000"
+                android:textColorHighlight="#6C79BF"
+                android:textColorHint="#000000"
+                android:textColorLink="#000000"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtHelpersCount"
+                android:layout_width="128dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:fontFamily="serif-monospace"
+                android:textColor="#000000"
+                android:textColorHighlight="#6C79BF"
+                android:textColorHint="#000000"
+                android:textColorLink="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtJobsCount"
+                android:layout_width="128dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:fontFamily="serif-monospace"
+                android:textColor="#000000"
+                android:textColorHighlight="#6C79BF"
+                android:textColorHint="#000000"
+                android:textColorLink="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtFollowertCount"
+                android:layout_width="128dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:fontFamily="serif-monospace"
+                android:textColor="#000000"
+                android:textColorHighlight="#6C79BF"
+                android:textColorHint="#000000"
+                android:textColorLink="#000000"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

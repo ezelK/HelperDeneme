@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="179dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <Spinner
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:id="@+id/registerSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/txtRegisterSsn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ssn"
+            android:inputType="number" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/txtRegisterName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="name surname"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints" />
+
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/txtRegisterPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Phone Number"
+            android:inputType="number" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/txtRegisterEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="email"
+            android:inputType="textEmailAddress" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/txtRegisterPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="password"
+            android:inputType="textPassword" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/txtRegisterConfirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="password"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="SIGN UP"
+            android:background="@drawable/buttonbg"
+            android:textColor="#6C79BF"
+            android:textStyle="italic"/>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
